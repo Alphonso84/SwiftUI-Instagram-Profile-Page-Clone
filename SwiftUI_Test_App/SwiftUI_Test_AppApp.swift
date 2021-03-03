@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SwiftUI_Test_AppApp: App {
+    var search = Search()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+                .environmentObject(search)
         }
     }
 }
